@@ -47,7 +47,7 @@ function crearDivCobertura() {
     divCobertura.style.alignItems = 'flex-start';
 
     const imagen = document.createElement("img");
-    imagen.src = "TARJETA/FONDO.jpg";
+    imagen.src = "../TARJETA/FONDO.jpg";
     imagen.id = 'imagen-carta';
     
     // Crear el elemento de audio
@@ -56,7 +56,7 @@ function crearDivCobertura() {
     audioPlayer.addEventListener('error', function(e) {
         // Si hay error, intentar con una fuente alternativa
         if (audioPlayer.error.code === 4) {
-            audioPlayer.src = 'TARJETA/Ha Ash- Cree Y Atrevete Letra.mp3';
+            audioPlayer.src = '/TARJETA/Ha Ash- Cree Y Atrevete Letra.mp3';
             audioPlayer.load();
         }
     });
@@ -65,7 +65,7 @@ function crearDivCobertura() {
         // Audio listo para reproducirse
     });
     
-    audioPlayer.src = 'TARJETA/Ha Ash- Cree Y Atrevete Letra.mp3';
+    audioPlayer.src = '/TARJETA/Ha Ash- Cree Y Atrevete Letra.mp3';
     audioPlayer.controls = false;
     audioPlayer.loop = true;
     audioPlayer.volume = 0.7;
@@ -74,22 +74,22 @@ function crearDivCobertura() {
     
     // Crear botón visible (imagen) de música
     const botonMusicaVisible = document.createElement("img");
-    botonMusicaVisible.src = "TARJETA/BOTON 2.png";
+    botonMusicaVisible.src = "/TARJETA/BOTON 2.png";
     botonMusicaVisible.id = 'boton-musica-visible';
     
     // Crear botón visible (imagen) de fecha
     const fecha = document.createElement("img");
-    fecha.src = "TARJETA/BOTON 0.png";
+    fecha.src = "/TARJETA/BOTON 0.png";
     fecha.id = 'imagen-fecha';
 
     // Crear botón visible (imagen) de dollar
     const dollar = document.createElement("img");
-    dollar.src = "TARJETA/dollar.png";
+    dollar.src = "/TARJETA/dollar.png";
     dollar.id = 'imagen-dollar';
 
     // Crear botón visible (imagen) de ubicación
     const ubicacion = document.createElement("img");
-    ubicacion.src = "TARJETA/BOTON 1.png";
+    ubicacion.src = "/TARJETA/BOTON 1.png";
     ubicacion.id = 'imagen-ubicacion';
     
     // Crear botón transparente (área clickeable) de música
@@ -277,7 +277,7 @@ function crearDivCobertura() {
         
         if (audioPlayer.error) {
             if (audioPlayer.error.code === 4) {
-                audioPlayer.src = 'TARJETA/Ha Ash- Cree Y Atrevete Letra.mp3';
+                audioPlayer.src = '/TARJETA/Ha Ash- Cree Y Atrevete Letra.mp3';
                 audioPlayer.load();
                 
                 setTimeout(() => {
@@ -329,7 +329,7 @@ function crearDivCobertura() {
         
         // Crear imagen de celebración
         const imgCelebracion = document.createElement("img");
-        imgCelebracion.src = "TARJETA/CELEBRACION.jpg";
+        imgCelebracion.src = "/TARJETA/CELEBRACION.jpg";
         imgCelebracion.style.maxWidth = '90%';
         imgCelebracion.style.maxHeight = '90%';
         imgCelebracion.style.borderRadius = '10px';
@@ -375,7 +375,7 @@ function crearDivCobertura() {
         
         // Crear imagen de ticket
         const imgTicket = document.createElement("img");
-        imgTicket.src = "TARJETA/TICKET.jpg";
+        imgTicket.src = "../TARJETA/TICKET.jpg";
         imgTicket.style.maxWidth = '90%';
         imgTicket.style.maxHeight = '90%';
         imgTicket.style.borderRadius = '10px';
