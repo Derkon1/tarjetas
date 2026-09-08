@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(TARJETA/FONDO-BASE.jpeg); /* RUTA CORREGIDA */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    margin: 0; 
+
+}
+
+/* ... (el resto de tu CSS permanece igual) ... */
+
+@media (max-width: 290px) {
+    .mensaje{
+        width: 200px;
+        height: 160px;
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .superior{
+        border-left:  100px solid transparent;
+        border-right:  100px solid transparent;
+        border-top:  80px solid #ffffff;
+        border-bottom:  80px solid transparent;
+    }
+    
+    .carta{
+        border-left:  100px solid #fcfcfcec;
+        border-right:  100px solid #fcfcfcec;
+        border-top:  80px solid transparent;
+        border-bottom:  80px solid #fcfcfcec;
+    }
+
+    #heart-icon{
+        top: 50px;
+        right: 80px;
+        font-size: 40px;
+        z-index: 20;
+    }
+}
+
+/* ... (el resto de tu CSS permanece igual) ... */
